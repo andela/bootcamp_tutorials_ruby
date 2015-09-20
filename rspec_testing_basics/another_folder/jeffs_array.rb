@@ -1,4 +1,6 @@
 class JeffsArray
+  attr_reader :array
+
   def initialize(array)
     @array = array
   end
@@ -11,7 +13,6 @@ class JeffsArray
     @array.size
   end
 end
-
 
 jeffs_array = JeffsArray.new([1,2,3])
 last_item = jeffs_array.new_pop
