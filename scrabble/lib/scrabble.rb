@@ -8,11 +8,4 @@ class Scrabble
   }
   end
 
-  def self.score(word)
-    letter_array = word.split('')
-    x = letter_array.map do |letter|
-      Scrabble.values[letter.upcase]
-    end
-    require 'pry' ; binding.pry
-  end
 end
